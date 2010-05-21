@@ -10,6 +10,7 @@ function ccc_get_styles() {
   $options['clouds'] = t('Clouds');
   $options['rocks'] = t('Rocks');
   $options['sea'] = t('Sea');
+  $options['ccc'] = t('CCC');
   $options['custom'] = t('Custom style');
   return $options;
 }
@@ -54,6 +55,11 @@ function ccc_get_style_info() {
           'background_color' => '#011220',
           'background_repeat' => 'repeat-x',
           'background_url' => url("$path/sea.jpg", array('absolute' => TRUE)),
+        ),
+        'ccc' => array(
+          'background_color' => '#011220',
+          'background_repeat' => 'repeat-x',
+          'background_url' => url("$path/ccc_bg.jpg", array('absolute' => TRUE)),
         ),
       );
       return !empty($styles[$style]) ? $styles[$style] : $styles['sea'];
