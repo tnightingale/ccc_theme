@@ -1,13 +1,12 @@
 ; $Id$
-name = "Singular"
-description = "Simple theme based on tao."
-version = "6.x-1.2"
+name = "ccc"
+description = "Singular theme with some customizations."
+version = "6.x-1.0"
 core = "6.x"
 engine = "phptemplate"
 base theme = "tao"
 
-project = "singular"
-project status url = "http://code.developmentseed.org/fserver" 
+project = "ccc"
 
 stylesheets[screen][] = "style.css"
 stylesheets[screen][] = "css/forms.css"

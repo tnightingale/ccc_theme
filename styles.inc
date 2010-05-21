@@ -3,7 +3,7 @@
 /**
  * Retrieve an options array of styles.
  */
-function singular_get_styles() {
+function ccc_get_styles() {
   $options = array();
   $options['book'] = t('Book');
   $options['city'] = t('City');
@@ -17,8 +17,8 @@ function singular_get_styles() {
 /**
  * Retrieve specific info about the current style.
  */
-function singular_get_style_info() {
-  $settings = theme_get_settings('singular');
+function ccc_get_style_info() {
+  $settings = theme_get_settings('ccc');
   $style = !empty($settings['style']) ? $settings['style'] : 'sea';
   switch ($style) {
     case 'custom':
@@ -28,7 +28,7 @@ function singular_get_style_info() {
       $info['background_repeat'] = !empty($settings['background_repeat']) ? $settings['background_repeat'] : 'no-repeat';
       return $info;
     default:
-      $path = drupal_get_path('theme', 'singular') .'/images';
+      $path = drupal_get_path('theme', 'ccc') .'/images';
       $styles = array(
         'book' => array(
           'background_color' => '#e8cfab',

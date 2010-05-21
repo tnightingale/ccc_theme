@@ -1,6 +1,6 @@
 // $Id$
 
-Drupal.behaviors.singular = function (context) {
+Drupal.behaviors.ccc = function (context) {
   $('#growl > div:not(.processed)').each(function() {
     $(this).addClass('processed');
     $('span.close', this).click(function() {

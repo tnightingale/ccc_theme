@@ -3,12 +3,12 @@
 /**
  * Implementation of preprocess_page().
  */
-function singular_preprocess_page(&$vars) {
-  include_once(drupal_get_path('theme', 'singular') .'/styles.inc');
-  $vars['styles'] .= singular_style_css(singular_get_style_info());
-  $vars['styles_ie6'] = singular_style_ie6();
+function ccc_preprocess_page(&$vars) {
+  include_once(drupal_get_path('theme', 'ccc') .'/styles.inc');
+  $vars['styles'] .= ccc_style_css(ccc_get_style_info());
+  $vars['styles_ie6'] = ccc_style_ie6();
 
-  $settings = theme_get_settings('singular');
+  $settings = theme_get_settings('ccc');
   if (!empty($settings['layout'])) {
     $vars['attr']['class'] .= ' ' . $settings['layout'];
   }
@@ -17,7 +17,7 @@ function singular_preprocess_page(&$vars) {
 /**
  * Implementation of preprocess_node().
  */
-function singular_preprocess_node(&$vars) {
+function ccc_preprocess_node(&$vars) {
   $node = menu_get_object();
   if ($node === $vars['node']) {
     $vars['attr']['class'] .= ' node-page';
@@ -31,7 +31,7 @@ function singular_preprocess_node(&$vars) {
 /**
  * Generate inline CSS for a given style.
  */
-function singular_style_css($info) {
+function ccc_style_css($info) {
   $output = "<style type='text/css'>body.tao { ";
   $output .= "background-color: {$info['background_color']}; ";
   if (!empty($info['background_url'])) {
@@ -52,7 +52,7 @@ function singular_style_css($info) {
 /**
  * PNG transparency compatibility for IE6.
  */
-function singular_style_ie6() {
+function ccc_style_ie6() {
   $mask_path = base_path() . path_to_theme() . '/images/mask.png';
   $property = "background:transparent; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='{$mask_path}');";
   $linkfix = "position:relative;";
@@ -62,12 +62,12 @@ function singular_style_ie6() {
 /**
  * Override of theme_status_message().
  */
-function singular_status_messages($display = NULL) {
+function ccc_status_messages($display = NULL) {
   $output = '';
   $first = TRUE;
 
   // Theme specific settings
-  $settings = theme_get_settings('singular');
+  $settings = theme_get_settings('ccc');
   $autoclose = isset($settings['autoclose']) ? $settings['autoclose'] : array('status' => 1, 'warning' => 0, 'error' => 0);
 
   foreach (drupal_get_messages($display) as $type => $messages) {

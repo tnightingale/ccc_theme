@@ -136,7 +136,7 @@ body.fluid #sidebar { width:20%; }
 /**
  * Page ===============================================================
  */
-#page { background:#fff; }
+#page { background: url(images/mask_fg.png); }
 
 /**
  * Tabs ===============================================================
@@ -184,8 +184,10 @@ div.left div.admin-panel { margin-right:10px; }
  * Page content =======================================================
  */
 #page #content {
+  /*
   background:#f8f8f8;
   border-top:1px solid #ddd;
+  */
   padding:19px 20px 20px;
 
   -moz-border-radius-bottomleft:5px;
