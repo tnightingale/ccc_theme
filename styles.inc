@@ -58,7 +58,7 @@ function ccc_get_style_info() {
         ),
         'ccc' => array(
           'background_color' => '#011220',
-          'background_repeat' => 'repeat-x',
+          'background_repeat' => 'repeat',
           'background_url' => url("$path/ccc_bg.jpg", array('absolute' => TRUE)),
         ),
       );
