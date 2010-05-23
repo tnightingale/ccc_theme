@@ -1,3 +1,7 @@
+#galleria-content {
+  padding: 10px 0;
+}
+
 #galleria-content ul.gallery {
   margin: 10px;
 }
@@ -8,14 +12,32 @@
   margin-right: 0 ;
 }
 
-#galleria-content {
-  background: url(../images/mask.png) repeat;
-}
-
 #galleria-content .item-list {
+  clear: both;
 }
 
 #galleria-content #main-image img,
 #galleria-content div.galleria-nav {
   margin: 0 auto;
+}
+
+#galleria-content #galleria-nav-prev {
+  background: url(../images/galleria-nav-prev-black.png) no-repeat;
+  float: left;
+}
+
+#galleria-content #galleria-nav-next {
+  background: url(../images/galleria-nav-next-black.png) no-repeat;
+  float: right;
+}
+#galleria-content .galleria-nav-button {
+  width: 40px;
+  height: 80px;
+  margin: 10px;
+}
+
+#galleria-content #main-image {
+  width: 560px;
+  float: left;
+  margin-bottom: 10px;
 }

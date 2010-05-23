@@ -10,11 +10,11 @@
 <?php if ($image_count > 0): ?>
   <div id="galleria-content">
     <?php if ($image_count > 1): ?>
-      <a onclick="$.galleria.prev(); return false;" href="#">&laquo; <?php print $prev; ?></a>
+      <a id="galleria-nav-prev" class="galleria-nav-button" onclick="$.galleria.prev(); return false;" href="#"></a>
     <?php endif; ?>
     <div id="main-image"></div>
     <?php if ($image_count > 1): ?>
-      <a onclick="$.galleria.next(); return false;" href="#"><?php print $next; ?> &raquo;</a>
+      <a id="galleria-nav-next" class="galleria-nav-button" onclick="$.galleria.next(); return false;" href="#"></a>
     <?php endif; ?>
         
     <?php print $thumbnails; ?>
