@@ -10,6 +10,7 @@ project = "ccc"
 
 stylesheets[screen][] = "style.css"
 stylesheets[screen][] = "css/forms.css"
+stylesheets[screen][] = "css/ccc-galleria.css"
 
 scripts[] = "js/theme.js"
 

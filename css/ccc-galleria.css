@@ -1,0 +1,21 @@
+#galleria-content ul.gallery {
+  margin: 10px;
+}
+#galleria-content ul li {
+  margin-right: 10px;
+}
+#galleria-content ul li.last {
+  margin-right: 0 ;
+}
+
+#galleria-content {
+  background: url(../images/mask.png) repeat;
+}
+
+#galleria-content .item-list {
+}
+
+#galleria-content #main-image img,
+#galleria-content div.galleria-nav {
+  margin: 0 auto;
+}
