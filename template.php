@@ -12,6 +12,8 @@ function ccc_preprocess_page(&$vars) {
   if (!empty($settings['layout'])) {
     $vars['attr']['class'] .= ' ' . $settings['layout'];
   }
+  
+  $vars['front_page'] = (drupal_is_front_page()) ? TRUE : FALSE;
 }
 
 /**

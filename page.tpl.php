@@ -50,6 +50,11 @@
       <?php if ($tabs2) print $tabs2 ?>
     </div>
     <?php endif; ?>
+    
+    <?php error_log(print_r($front_page, 1), 0); ?>
+    <?php if ($front_page): ?>
+    <div id='upper-content'><?php print $upper_content ?></div>
+    <?php endif; ?>
     <div id='content' class='clear-block'><?php print $content ?></div>
   </div>
 
