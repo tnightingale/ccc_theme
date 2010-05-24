@@ -11,6 +11,7 @@ project = "ccc"
 stylesheets[screen][] = "style.css"
 stylesheets[screen][] = "css/forms.css"
 stylesheets[screen][] = "css/ccc-galleria.css"
+stylesheets[screen][] = "css/portfolio.css"
 
 scripts[] = "js/theme.js"
 

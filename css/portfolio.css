@@ -1,0 +1,10 @@
+
+.view-featured .view-content {
+  padding: 20px;
+  clear: both;
+}
+
+.view-featured .views-row {
+  float: left;
+  margin: 0 15px;
+}
