@@ -6,5 +6,22 @@
 
 .view-featured .views-row {
   float: left;
-  margin: 0 15px;
+  padding: 15px;
+  background: url(../images/mask.png) repeat;
+}
+
+.view-featured .views-row-odd {
+  margin-right: 20px;
+}
+
+.view-featured .views-field-title a {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.view-featured .views-field-name a {
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
 }
