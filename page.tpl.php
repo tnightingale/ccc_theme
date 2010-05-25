@@ -51,7 +51,6 @@
     </div>
     <?php endif; ?>
     
-    <?php error_log(print_r($front_page, 1), 0); ?>
     <?php if ($front_page): ?>
     <div id='upper-content'><?php print $upper_content ?></div>
     <?php endif; ?>
